@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="multi-step">
     <WelcomePage :next="next" v-if="page === 1" />
     <StepOne :next="next" :saveInfo="saveInfo" v-if="page === 2" />
     <StepTwo :next="next" :info="info" v-if="page === 3" />
@@ -42,7 +42,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.hello {
+.multi-step {
   width: 500px;
   margin: 0 auto;
 }

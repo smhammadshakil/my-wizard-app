@@ -20,18 +20,3 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.form-fields {
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: montserrat;
-  color: #2c3e50;
-  font-size: 13px;
-}
-</style>
