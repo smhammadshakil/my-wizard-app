@@ -90,6 +90,11 @@ export default {
         safe: 1.5, //for more 50%
         superSafe: 1.75, //for more 75%
       },
+			countryMap: {
+        HKD: 'Hong Kong',
+        USD: 'USA',
+        AUD: 'Australia',
+      },
     };
   },
   methods: {
@@ -102,7 +107,7 @@ export default {
         self.saveInfo({
           name: self.name,
           age: self.age,
-          country: self.country,
+          country: self.countryMap[self.country],
           selectedPackage: self.selectedPackage,
           premium: self.premium * self.packageMap[self.selectedPackage],
         });
